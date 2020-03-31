@@ -29,7 +29,10 @@ let token ="YOUR TOKEN GOES HERE";
 
 Place the folder on your website 
 
-https://YOUR_WEB_SITE/podcaster/?id=ANY_NAME
+https://YOUR_WEB_SITE.com/podcaster/publisher/?id=ANY_NAME
+
+The player link will pop up or you can embed using an frame. Source will look like this.
+https://YOUR_WEB_SITE.com/podcaster/player/?id=ANY_NAME
 
 Customize the publisher and player as you want.
 
