@@ -4,7 +4,7 @@
   const audio = document.querySelector('audio');
 
   //Millicast required info.
-  let yourUrl = "https://robertdev.influxis.com/millicast/podcaster/player/?id=";
+  let yourUrl = "https://YOUR_SITE_.com/podcaster/player/?id=";
   let url;// path to Millicast Server - Returned from API
   let jwt;//authorization token - Returned from API
 
