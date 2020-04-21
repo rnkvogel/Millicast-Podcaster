@@ -26,8 +26,9 @@ body {
   width: 100vw;
   height:100vh;
   background-image: url('../images/player.jpg');
+  background-position: center;
   background-repeat: no-repeat; 
-  background-size: cover;
+  background-size: 60%;
   padding-top: 1%;
   position: relative;
 }
