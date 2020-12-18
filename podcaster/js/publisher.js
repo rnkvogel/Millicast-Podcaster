@@ -383,7 +383,7 @@
       if (href.indexOf('htm') > -1) {
         href = href.substring(0, href.lastIndexOf('/') + 1);
       }
-      let url = yourUrl + "account=" accountId + "&stream=" + streamName;
+      let url = yourUrl + "account=" + accountId + "&stream=" + streamName;
       vTxt.innerText = 'Viewer Path:\n' + url;
       vTxt.setAttribute('href', url);
     }
