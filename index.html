@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no, maximum-scale=10.0,user-scalable=1">
+  <link rel="stylesheet" href="../css/publisher.css">
+  <script src="../js/audio.js"></script>
+  <script src="../js/adapter-latest.js"></script>
+  </head>
+ <body>
+  <div class="container">
+   
+  <video id="localVideo" autoplay muted playsinline poster="../images/OpenMic.jpg"></video>
+ <!--  <div class="bottom-left">  <iframe scrolling="no" id="iFrame" ></iframe>   -->
+  <div class="bottom-left">
+  <input type="button" id="publishBtn" class="inline-b" onclick="start()" value="START PUBLISH" />
+  <input type="button" id="micMuteBtn" class="inline-b p-10" onclick="toggleMic()"  value="MUTE MIC" />
+</div>
+  <div class="top-left">
+ <a id="viewerUrl" href="" target="_blank" ></a>
+
+</div>
+
+</div>
+    <div id="form" class="form-input">
+        <input id="tokenTxt" class="input" type="text" value="" placeholder="Token" />
+        <input id="streamTxt" class="input ml-10 mr-10" type="text" value="" placeholder="Stream Name"/>
+        <input id="viewTxt" class="input" type="text" value="" placeholder="Account Id"/>
+    </div>
+    <div class="ml-10 mt-10">
+    <div class="ml-10 mt-10">
+</body>
+
+</html>
