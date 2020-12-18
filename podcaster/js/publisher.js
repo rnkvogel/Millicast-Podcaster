@@ -10,9 +10,9 @@
 
   // hard code it here, or enter it at runtime on the field.
    let params = new URLSearchParams(document.location.search.substring(1));
-   let accountId = 'YOURID'; //let accountId ADD YOUR ACCOUNT ID HERE
-   let streamName = params.get('id');
-   let token ="YOUR_TOKEN_GOES_HERE";
+  let accountId = params.get('viewTxt');; //let accountId ADD YOUR ACCOUNT ID HERE
+  let streamName = params.get('streamTxt');
+  let token = params.get('tokenTxt');;
    console.log('Millicast Viewer Stream: ', streamName);
 
   //media stream object from local user mic and camera.
