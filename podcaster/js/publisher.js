@@ -4,7 +4,7 @@
   const audio = document.querySelector('audio');
 
   //Millicast required info.
-  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?account" + accountId + "&steamName" + streamName; //This will need to be updated based on your Website!!
+  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?account" + accountId + "&steam=" + streamName; //This will need to be updated based on your Website!!
   let url;// path to Millicast Server - Returned from API 
   let jwt;//authorization token - Returned from API
 
@@ -383,7 +383,7 @@
       if (href.indexOf('htm') > -1) {
         href = href.substring(0, href.lastIndexOf('/') + 1);
       }
-      let url        = yourUrl + streamName;
+      let url = yourUrl;
       vTxt.innerText = 'Viewer Path:\n' + url;
       vTxt.setAttribute('href', url);
     }
