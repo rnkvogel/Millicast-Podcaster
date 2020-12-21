@@ -17,6 +17,7 @@ color:#fff;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         margin:10px
+        padding-bottom: 10%;
     }
 #publishBtn:focus{
 background-color:red;
@@ -29,6 +30,7 @@ background-color:red;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         margin:10px
+        padding-bottom: 10%;
     }
 #micMuteBtn:focus{
 background-color:red;
