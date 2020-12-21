@@ -4,41 +4,43 @@
   padding: 0;
   border: 0;
   overflow: hidden;
-  }
-  a{
 
-color:#fff;
   }
+a{
+color: #fff;    
+}  
 #publishBtn {
         background-color: #2ea00b;
         color: #ffffff;
-        padding: 5px;
+        padding: 10px;
         border-radius: 10px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         margin:10px
+        padding-bottom:20%;
     }
 #publishBtn:focus{
-background-color:red;
+/*background-color:red;*/
   }
 #micMuteBtn {
         background-color: #2ea00b;
         color: #ffffff;
-        padding: 5px;
+        padding: 10px;
         border-radius: 10px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         margin:10px
+        padding-bottom:20%;
     }
 #micMuteBtn:focus{
-background-color:red;
-
-  }
+/*background-color:red;*/d;
+}
 #viewerURL{
     position: absolute;
-    top: 8px;
+    padding-top: 20%;
+    top: 10%;
     right: 42%;
-    visibility: hidden;
+    visibility: visible;
 }
 #aspect{
         background-color: #2ea00b;
@@ -49,19 +51,7 @@ background-color:red;
         -webkit-border-radius: 10px;
         margin:10px
     }
-#buttonGo {
-        background-color: #2ea00b;
-        color: #ffffff;
-        opacity: 0.8;
-        padding: 10px;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        margin:10px
-    }
-#buttonGo:focus{
-background-color:red;
-  }
+
     #aspect{
         background-color: #2ea00b;
         color: #ffffff;
@@ -80,22 +70,6 @@ background-color:red;
         -webkit-border-radius: 10px;
         margin:10px
     }
-  .slider {
-  color: red;
-    -webkit-appearance: none;
-     width: 4.2em;
-    height: 15px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.8;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-.slider:hover {
-    opacity: 1;
-}
 .container {
     position: relative;
     text-align: center;
@@ -106,16 +80,16 @@ background-color:red;
 /* Bottom left text */
 .bottom-left {
     position: absolute;
-    bottom: 2px;
-    left: 40%;
-   padding-bottom:5%;
+    bottom: 10%;
+    left:40%;
+    padding-bottom: 5%;
 }
 /* Top left text */
 .top-left {
     position: absolute;
-    margin-left: 30%;
+    margin-left; 10%;
     top: 2px;
-    left: 0%;
+    left: 35%;
 }
 
 /* Top right text */
@@ -136,10 +110,10 @@ background-color:red;
 
 /* Centered text */
 .centered {
-position: absolute;
-margin-left:40%;
-    top: 8px;
-    left: 16px;  
+ position: absolute;
+margin-left; 40%;
+top: 8px;
+left: 16px;  
 }
 #iframe{
 border: -1px;
@@ -155,11 +129,12 @@ opacity: 50%
 }
 #localVideo{
 width: 100vw;
-height: auto;
+height: 100vh;
 }
 #form{
 position: fixed;
 top:0;
-right: 35%;
+right: 38%;
+
 
 }
