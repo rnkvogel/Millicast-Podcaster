@@ -355,7 +355,7 @@
         }
       }
 
-      let constraints = {audio: a, video: true};
+      let constraints = {audio: a, video: false};
       navigator.mediaDevices.getUserMedia(constraints)
         .then(str => {
           resolve(str);
