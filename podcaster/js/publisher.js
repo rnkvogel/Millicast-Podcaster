@@ -1,5 +1,7 @@
- //Millicast required info.
-  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?"   //This will need to be updated based on your Website!!
+//Millicast required info.
+    let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?" ;
+  let url;// path to Millicast Server - Returned from API
+  let jwt;//authorization token - Returned from API
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
 
@@ -17,7 +19,7 @@
   let token;
   let streamName;
   let accountId;
-  
+
   let pc;//peer connection
   let ws;//live broadcast websocket
   let isBroadcasting = false;
@@ -62,7 +64,7 @@
     ws.close();
     ws = null;
     jwt = null;
-    
+
     isBroadcasting = false;
     onBroadcasting();
   }
@@ -193,7 +195,7 @@
 
   function onBroadcasting(){
     console.log('broadcasting:',isBroadcasting);
-    
+
     //Update publish button.
     btn.innerHTML = isBroadcasting ? 'STOP PUBLISHING' : 'START PUBLISH';
     // btn.disabled  = true;
