@@ -1,7 +1,5 @@
  //Millicast required info.
   let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?"   //This will need to be updated based on your Website!!
-    let url;// path to Millicast Server - Returned from API
-  let jwt;//authorization token - Returned from API
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
 
