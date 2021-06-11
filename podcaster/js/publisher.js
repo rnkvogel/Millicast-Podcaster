@@ -1,5 +1,5 @@
 //Millicast required info.
-    let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?" ;
+  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?" ;
   let url;// path to Millicast Server - Returned from API
   let jwt;//authorization token - Returned from API
   const apiPath = 'https://director.millicast.com/api/director/publish';
@@ -10,8 +10,6 @@
   const useSimulcast = false;//true for simulcast. (chrome only)
   const audio = document.querySelector('audio');
   //Millicast required info.
-  let url;// path to Millicast Server - Returned from API
-  let jwt;//authorization token - Returned from API
 
   // (Millicast API Info) hard code it here, or enter it at runtime on the field.
   // You can add to the url as a prameter
