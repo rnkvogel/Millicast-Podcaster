@@ -174,7 +174,22 @@ input.hidel:hover {
     background-color:rgba(8,8,8,1);
     color: #ffffff;
 }
-
+#userCntView {
+          position: absolute;
+          color: white;
+          right: 12px;
+          top: 12px;
+          z-index: 3;
+          background-color: black;
+          border-radius: 3px;
+          padding: 10px 15px;
+          
+          display: none;
+        }
+#userCntView #count {
+          margin: 0;
+          font-size: 13px;
+        }
 
 
 
