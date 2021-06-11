@@ -5,19 +5,17 @@
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
 
-  const codec = 'h264'; //'vp8', 'vp9'
+ const codec = 'h264'; //'vp8', 'vp9'
   const stereo = true;//true for stereo
   const useSimulcast = false;//true for simulcast. (chrome only)
   const audio = document.querySelector('audio');
-  //Millicast required info.
-
-  // (Millicast API Info) hard code it here, or enter it at runtime on the field.
+  //Millicast required info.// (Millicast API Info) hard code it here, or enter it at runtime on the field.
   // You can add to the url as a prameter
   // ex:( /publisher.html?token=8e16b5fff53e3&streamName=feed1&accountId=L7c3p0 ).
   let token;
   let streamName;
   let accountId;
-
+  
   let pc;//peer connection
   let ws;//live broadcast websocket
   let isBroadcasting = false;
@@ -62,7 +60,7 @@
     ws.close();
     ws = null;
     jwt = null;
-
+    
     isBroadcasting = false;
     onBroadcasting();
   }
@@ -193,7 +191,7 @@
 
   function onBroadcasting(){
     console.log('broadcasting:',isBroadcasting);
-
+    
     //Update publish button.
     btn.innerHTML = isBroadcasting ? 'STOP PUBLISHING' : 'START PUBLISH';
     // btn.disabled  = true;
@@ -355,7 +353,7 @@
         }
       }
 
-      let constraints = {audio: a, video: false};
+      let constraints = {audio: a, video: true};
       navigator.mediaDevices.getUserMedia(constraints)
         .then(str => {
           resolve(str);
