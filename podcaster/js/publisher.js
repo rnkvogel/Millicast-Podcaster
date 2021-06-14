@@ -1,5 +1,5 @@
 //Millicast required info.
-  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?id=" + id + "&account" + account ;
+  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/;
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
   const audio = document.querySelector('audio');
@@ -478,7 +478,7 @@
       if (href.indexOf('htm') > -1) {
         href = href.substring(0, href.lastIndexOf('/') + 1);
       }
-      let url        = yourUrl + streamName;
+      let url        = yourUrl  + '?account=' + accountId + '&id=' + streamName;
       vTxt.innerText = 'Viewer Path:\n' + url;
       vTxt.setAttribute('href', url);
     }
@@ -507,7 +507,8 @@
     }
 
     console.log('setParams - token:', token, ' name: ', streamName, ', viewer ID:', accountId, ', mc url:', url, ', TURN url', turnUrl);
-    //if still missing token in the URLS for any of them, show form.
+    //if still missing token in the URLS for any of them, 
+    form.
     if (!token || !streamName || !accountId) {
       document.getElementById('form').setAttribute("style", "display: unset;");
       let i, l = views.length;
