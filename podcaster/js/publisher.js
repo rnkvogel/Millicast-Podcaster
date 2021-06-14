@@ -1,5 +1,5 @@
 //Millicast required info.
-  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?id=" ;
+  let yourUrl = "https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/?id=" + id + "&account" + account ;
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
   const audio = document.querySelector('audio');
