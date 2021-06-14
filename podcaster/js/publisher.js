@@ -1,5 +1,6 @@
 //Millicast required info.
   let yourUrl = 'https://rnkvogel.github.io/Millicast-Podcaster/podcaster/player/';
+  //URL to millicast API
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
   const audio = document.querySelector('audio');
@@ -14,9 +15,9 @@
 
   // hard code it here, or enter it at runtime on the field.
    let params = new URLSearchParams(document.location.search.substring(1));
-  let accountId = params.get('viewTxt');; //let accountId ADD YOUR ACCOUNT ID HERE
-  let streamName = params.get('streamTxt');
-  let token = params.get('tokenTxt');;
+  let accountId = params.get('viewTxt'); //let accountId ADD YOUR ACCOUNT ID HERE
+  let streamName = params.get('viewTxt');
+  let token = params.get('tokenTxt');
    console.log('Millicast Viewer Stream: ', streamName);
 
   //media stream object from local user mic and camera.
@@ -33,7 +34,6 @@
     {form: 'streamTxt', param: 'streamName'},
     {form: 'viewTxt', param: 'accountId'}
   ];
-
 
   let isBroadcasting = false;
 
@@ -479,6 +479,7 @@
         href = href.substring(0, href.lastIndexOf('/') + 1);
       }
       let url        = yourUrl  + '?account=' + accountId + '&id=' + streamName;
+      //let url        = href + 'viewer.html?accountId=' + accountId + '&streamName=' + streamName;
       vTxt.innerText = 'Viewer Path:\n' + url;
       vTxt.setAttribute('href', url);
     }
@@ -507,8 +508,7 @@
     }
 
     console.log('setParams - token:', token, ' name: ', streamName, ', viewer ID:', accountId, ', mc url:', url, ', TURN url', turnUrl);
-    //if still missing token in the URLS for any of them, 
-    form.
+    //if still missing token in the URLS for any of them, show form.
     if (!token || !streamName || !accountId) {
       document.getElementById('form').setAttribute("style", "display: unset;");
       let i, l = views.length;
