@@ -416,13 +416,20 @@
     
       let constraints = window.constraints = {
       audio: {
-      sampleSize: 16,
-      sampleRate: 48000,
-      channelCount: {min:2},
-      volume: .8,
-      autoGainControl: false,
-      echoCancellation: true,
-      noiseSuppression: true
+     // sampleSize: 16,
+      //sampleRate: 48000,
+     // channelCount: {min:2},
+      //volume: .8,
+      //autoGainControl: false,
+      //echoCancellation: true,
+      //noiseSuppression: true
+        
+sampleSize: 8,
+sampleRate: 4000,
+channelCount: 1,
+autoGainControl: false,
+echoCancellation: true,
+noiseSuppression: true,  
       },
        video: false
        }
