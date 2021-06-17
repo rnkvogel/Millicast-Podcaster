@@ -165,7 +165,8 @@
                                                    type: 'answer',
                           sdp:  data.sdp + "a=x-google-flag:conference\r\n",
                            //Audio full bandwidth
-                           sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 510 +"\r\n"
+                          // sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 510 +"\r\n"
+            sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 32 +"\r\n"
                                                  });
 
           pc.setRemoteDescription(answer)
