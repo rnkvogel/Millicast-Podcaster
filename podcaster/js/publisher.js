@@ -165,8 +165,8 @@
                                                    type: 'answer',
                           sdp:  data.sdp + "a=x-google-flag:conference\r\n",
                            //Audio full bandwidth
-                          // sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 510 +"\r\n"
-            sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 32 +"\r\n"
+                           sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 510 +"\r\n"
+
                                                  });
 
           pc.setRemoteDescription(answer)
@@ -417,20 +417,16 @@
     
       let constraints = window.constraints = {
       audio: {
-     // sampleSize: 16,
-      //sampleRate: 48000,
-     // channelCount: {min:2},
-      //volume: .8,
-      //autoGainControl: false,
-      //echoCancellation: true,
-      //noiseSuppression: true
+      //Available constraints  
+      sampleSize: 16,
+      sampleRate: 48000,
+      channelCount: {min:2},
+      volume: .8,
+      autoGainControl: false,
+      echoCancellation: true,
+      noiseSuppression: true
         
-sampleSize: 8,
-sampleRate: 4000,
-channelCount: 1,
-autoGainControl: false,
-echoCancellation: true,
-noiseSuppression: true,  
+
       },
        video: false
        }
