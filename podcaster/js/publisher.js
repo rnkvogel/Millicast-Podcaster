@@ -12,7 +12,7 @@
 
   let url;// path to Millicast Server - Returned from API
   let jwt;//authorization token - Returned from API
-  let AudioBitrate = 16; //510 full audio
+  let bitrate = 16; //510 full audio
   // hard code it here, or enter it at runtime on the field.
    let params = new URLSearchParams(document.location.search.substring(1));
   let accountId = params.get('viewTxt'); //let accountId ADD YOUR ACCOUNT ID HERE
@@ -165,7 +165,7 @@
                                                    type: 'answer',
                           sdp:  data.sdp + "a=x-google-flag:conference\r\n",
                            //Audio full bandwidth 510 can be limited to control bandwidth
-                           sdp: data.sdp + "a=MID:audio\r\nb=AS:" + AudioBitrate +"\r\n"
+                           sdp: data.sdp + "a=MID:audio\r\nb=AS:" + bitrate +"\r\n"
 
                                                  });
 
