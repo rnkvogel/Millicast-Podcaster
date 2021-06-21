@@ -164,8 +164,8 @@
           let answer = new RTCSessionDescription({
                                                    type: 'answer',
                           sdp:  data.sdp + "a=x-google-flag:conference\r\n",
-                           //Audio full bandwidth
-                           sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 510 +"\r\n"
+                           //Audio full bandwidth 510 can be limited to control bandwidth
+                           sdp: data.sdp + "a=MID:audio\r\nb=AS:" + 32 +"\r\n"
 
                                                  });
 
@@ -420,7 +420,8 @@
       //Available constraints  
       sampleSize: 16,
       sampleRate: 48000,
-      channelCount: {min:2},
+    //  channelCount: {min:2},
+      channelcCount: 1,  
       volume: .8,
       autoGainControl: false,
       echoCancellation: true,
